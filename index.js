@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   randomPrompt();
+  randomImage();
   const inputField = document.getElementById("input");
   inputField.addEventListener("keydown", (e) => {
     if (e.code === "Enter") {
@@ -10,13 +11,36 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// Random prompt on page load
+// Randomize prompt on page load
 function randomPrompt() {
   const examplePrompt = document.getElementById("input");
   examplePrompt.setAttribute(
     "placeholder",
     prompt[Math.floor(Math.random() * alternative.length)]
   );
+}
+
+// Randomise images on page load
+function randomImage() {
+  const adRandom = Array.from(document.querySelectorAll(".adContainer img"));
+  adRandom.forEach((linkEl) => {
+    // Search for every src attribute inside each array item
+    linkEl.setAttribute(
+      "src",
+      horizontalAd[Math.floor(Math.random() * horizontalAd.length)]
+    );
+  });
+
+  // Randomise bot pic and its corresponding link
+  const iconRandom = document.getElementById("bigImageContainer");
+  iconRandom.innerHTML = botPic[Math.floor(Math.random() * botPic.length)];
+
+  // Randomise img src
+  // const iconRandom = document.getElementById("bigImage");
+  // iconRandom.setAttribute(
+  //   "src",
+  //   botPic[Math.floor(Math.random() * botPic.length)]
+  // );
 }
 
 function output(input) {
@@ -57,6 +81,7 @@ function output(input) {
   addChat(input, product);
 }
 
+// Compare arrays
 function compare(promptsArray, repliesArray, string) {
   let reply;
   let replyFound = false;
@@ -78,6 +103,7 @@ function compare(promptsArray, repliesArray, string) {
   return reply;
 }
 
+// Populate chat container
 function addChat(input, product) {
   const messagesContainer = document.getElementById("messages");
 
@@ -102,7 +128,7 @@ function addChat(input, product) {
   messagesContainer.scrollTop =
     messagesContainer.scrollHeight - messagesContainer.clientHeight;
 
-  // Fake delay to seem "real"
+  // Timed delay to seem "real"
   setTimeout(() => {
     botText.innerText = `${product}`;
     // textToSpeech(product)

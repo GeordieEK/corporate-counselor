@@ -1,31 +1,98 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<title>Chatbot</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Corporate Counselor</title>
 	<link rel="icon" href="bot.png" />
 	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-<div id="headerContainer" class="headerContainer">
-	<div id="header">
-	<h1>Corporate Counselor</h1>
-	<h3>What's troubling you today?</h3>
-	</div>
-
-</div>
-
-	<div id="container" class="container">
-		<div id="chat" class="chat">
-			<div id="messages" class="messages"></div>
-			<input id="input" type="text" placeholder="What's on your mind?" autocomplete="off" autofocus="true" />
+	<div id="headerContainer" class="headerContainer">
+		<div id="header">
+		<img src="images/flameText.gif" alt="Corporate Counselor" id="headerLogo">
+		<h3>What's troubling you today?</h3>
+		<a href="about.html" class="pageLink">
+			<h3>About</h3>
 		</div>
-		<img src="bot.png" alt="Robot cartoon" height="500vh" id="bigImage">
+
+		</a>
 	</div>
+
+<!-- Ad containers -->
+
+	<div id="headerAdContainer" class="adContainer">
+		<a href="https://www.theguardian.com/lifeandstyle/2019/apr/16/how-capitalism-captured-the-mindfulness-industry"><img src="" alt=""></a>
+		<a href="https://medvisit.io/how-social-media-affects-mental-health/#:~:text=Negative%20Impacts%20of%20Social%20Media,them%20at%20the%20same%20time."><img src="" alt=""></a>
+		<a href="https://theconversation.com/mcmindfulness-buddhism-as-sold-to-you-by-neoliberals-88338"><img src="" alt=""></a>
+		<a href="https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-dietary-supplements#:~:text=Are%20there%20any%20risks%20in,hurt%20or%20complicate%20your%20health."><img src="" alt=""></a>
+		<a href="https://www.webmd.com/food-recipes/news/20040401/dietary-supplements"><img src="" alt=""></a>
+		<a href="https://policyadvice.net/insurance/insights/health-wellness-industry/#:~:text=The%20global%20wellness%20industry%2C%20including,growth%20of%20the%20global%20economy!"><img src="" alt=""></a>
+		<a href="https://web.njit.edu/~ronkowit/eliza.html"><img src="" alt=""></a>
+		<a href="https://www.wired.com/story/therapist-in-chatbot-app"><img src="" alt=""></a>
+		<a href="https://www.nature.com/articles/s41598-020-67736-6"><img src="" alt=""></a>
+		<a href="https://www.reuters.com/technology/facebook-research-shows-company-knew-instagram-harm-teens-senators-say-2021-09-30/"><img src="" alt=""></a>
+	</div>
+
+	<div id="leftAd" class="adContainer">
+		<a href="https://bigthink.com/health/health-wellness/"><img src="" alt=""></a>
+		<a href="https://www.bbc.com/news/uk-england-44388389"><img src="" alt=""></a>
+		<a href="https://www.theguardian.com/society/2020/jul/21/dnp-deadly-diet-pills-online-trade"><img src="" alt="https://www.grandviewresearch.com/press-release/global-dietary-supplements-market#:~:text=Dietary%20Supplements%20Market%20Growth%20%26%20Trends,8.6%25%20from%202021%20to%202028."></a>
+		<a href="https://www.vice.com/en/article/jm5nvp/ruby-tandoh-eat-clean-wellness"><img src="" alt=""></a>
+		<a href="https://www.theskinny.co.uk/sexuality/deviance/sobering-up-on-binge-drinking-and-wellness-culture"><img src="" alt=""></a>
+		<a href="https://time.com/4793331/instagram-social-media-mental-health/"><img src="" alt=""></a>
+	</div>
+
+	<div id="rightAd" class="adContainer">
+		<a href="https://www.npr.org/2021/09/01/1031053251/sackler-family-immunity-purdue-pharma-oxcyontin-opioid-epidemic"><img src="" alt=""></a>
+		<a href="https://www.newyorker.com/magazine/2017/10/30/the-family-that-built-an-empire-of-pain"><img src="" alt=""></a>
+		<a href="https://www.vice.com/en/article/7xgmay/mindfulness-is-the-capitalist-spirituality-ronald-purser-interview"><img src="" alt="https://www.grandviewresearch.com/press-release/global-dietary-supplements-market#:~:text=Dietary%20Supplements%20Market%20Growth%20%26%20Trends,8.6%25%20from%202021%20to%202028."></a>
+		<a href="https://medium.com/wisecrack/goop-and-the-nefarious-glamour-of-capitalist-pseudoscience-fe3ff566cbed"><img src="" alt=""></a>
+		<a href="https://www.theskinny.co.uk/sexuality/deviance/sobering-up-on-binge-drinking-and-wellness-culture"><img src="" alt=""></a>
+		<a href="https://gizmodo.com/your-ai-chatbot-therapist-isn-t-sure-what-it-s-doing-1843608786"><img src="" alt=""></a>
+		<a href="https://medium.com/voiceui/mental-health-bots-are-we-at-the-breaking-point-efab1c2b6e93"><img src="" alt=""></a>
+		<a href="https://www.fiercebiotech.com/medtech/digital-therapist-woebot-perks-up-90m-for-ai-powered-mental-health-platform"><img src="" alt=""></a>
+		<a href="https://lareviewofbooks.org/article/delete-your-account-on-the-theory-of-platform-capitalism/"><img src="" alt=""></a>
+		<a href="https://www.ippr.org/juncture-item/the-challenges-of-platform-capitalism"><img src="" alt=""></a>
+	</div>
+
+<!-- Chat container -->
+
+		<div id="container" class="container">
+			<div id="chat" class="chat">
+				<div id="messages" class="messages"></div>
+				<input id="input" type="text" placeholder="What's on your mind?" autocomplete="off" autofocus="true" />
+			</div>
+			<div id="bigImageContainer">
+			<img src="images/icon5.png" alt="Counselor icon" height="500vh" id="bigImage">
+			</div>
+		</div>
+
+<!-- Ad container -->
+
+	<div id="footerAd" class="adContainer">
+		<a href="https://www.nytimes.com/2019/06/08/opinion/sunday/women-dieting-wellness.html"><img src="" alt=""></a>
+		<a href="https://www.sciencedirect.com/science/article/abs/pii/S019074092032082X"><img src="" alt=""></a>
+		<a href="https://www.mckinsey.com/industries/consumer-packaged-goods/our-insights/feeling-good-the-future-of-the-1-5-trillion-wellness-market"></a>
+		<a href="https://www.thegoodtrade.com/features/fact-checking-wellness-industry"><img src="" alt=""></a>
+		<a href="https://socialistworker.co.uk/art/49405/Capitalism+cant+make+you+well"><img src="" alt=""></a>
+		<a href="https://www.huckmag.com/art-and-culture/books-art-and-culture/how-mindfulness-became-the-new-capitalist-spirituality/"><img src="" alt=""></a>
+	</div>
+
+<!-- Background Music -->
+<audio src="holdMusic.mp3" preload="auto" autoplay="true">
+	<embed src="holdMusic.mp3" type="audio"
+	loop="true"
+	autostart="true"
+	hidden="true"
+	mastersound>
+</audio>
+
+
 </body>
-<script type="text/javascript" src="index.js" ></script>
 <script type="text/javascript" src="constants.js" ></script>
-<!-- <script type="text/javascript" src="speech.js" ></script> -->
+<script type="text/javascript" src="index.js" ></script>
 
 </html>

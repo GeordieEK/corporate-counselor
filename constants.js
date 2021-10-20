@@ -5,7 +5,7 @@ const prompts = [
   // 1
   ["how are you", "how is life", "how are things"],
   // 2
-  ["what are you doing", "what is going on", "what is up"],
+  ["what are you doing", "what up", "what is going on", "what is up", "whatup"],
   // 3
   ["how old are you"],
   // 4
@@ -27,7 +27,7 @@ const prompts = [
   // 9
   ["bad", "bored", "tired"],
   // 10
-  ["help me", "tell me story", "tell me joke"],
+  ["tell me story", "tell me joke"],
   // 11
   ["ah", "yes", "ok", "okay", "nice"],
   // 12
@@ -108,19 +108,12 @@ const replies = [
 const alternative = [
   "Why not try eating more Yoplait™ yoghurt! It's high in B vitamins for extra energy.",
   "Have you tried getting up earlier? Many of the worlds top CEOs swear by a 5am alarm, get started early on the day!",
-  "Bro...",
-  "Try again",
-  "I'm listening...",
-  "I don't understand :/",
-];
-
-// Whatever else you want :)
-
-const coronavirus = [
-  "Please stay home",
-  "Wear a mask",
-  "Fortunately, I don't have COVID",
-  "These are uncertain times",
+  "We all feel down sometimes, try asking your Doctor about Ephedrine! It has been shown to improve energy and life satisfaction.",
+  "I'm sorry to hear that, have you tried asking your parents for some money?",
+  "What about taking a bath? Add a drop of Natural Essentials™ relaxation oil blend for smoother skin and a clearer mind.",
+  "Why don't you try taking some time off and heading to your lake house, or maybe Aspen?",
+  "I hear you... why not try getting away, literally! Virgin Galactic is now taking bookings for their next space tourist voyage, a bargain at only $250,000! Have your assistant contact us today!",
+  "That is unfortunate, have you tried incorporating GOOD GREEN VITALITY by Nuzest into your diet? With more than 75 high-quality vitamins, minerals and other essential nutrients designed to help you look good, feel good, defend and thrive, it’s easy to be healthy with GOOD GREEN VITALITY!",
 ];
 
 const prompt = [
@@ -130,4 +123,38 @@ const prompt = [
   "How about, the planet is dying and nobody is doing anything",
   "Something like, wages have not risen with living costs for 50 years",
   "Try, the same corporations that pledge to fight climate change are its fiercest opposition",
+];
+
+const horizontalAd = [
+  "images/ad1.jpg",
+  "images/ad2.jpg",
+  "images/ad3.jpg",
+  "images/ad4.jpg",
+  "images/ad5.jpg",
+  "images/ad6.jpg",
+  "images/ad7.jpg",
+  "images/ad8.jpg",
+  "images/ad9.jpg",
+  "images/ad10.jpg",
+  "images/ad11.jpg",
+  "images/ad12.jpg",
+  "images/ad13.jpg",
+  "images/ad14.jpeg",
+  "images/ad15.png",
+  "images/ad16.jpg",
+];
+
+const botPic = [
+  `<a href="https://www.theatlantic.com/letters/archive/2020/02/twitter-is-bad-for-the-news/605782/"><img src="images/icon1.png" alt="Counselor icon" height="500vh" id="bigImage"></img></a>`,
+  `<a href="https://www.bbc.com/news/technology-57332390"><img src="images/icon2.png" alt="Counselor icon" height="500vh" id="bigImage"></img></a>`,
+  `<a href="https://slate.com/technology/2021/10/facebook-scandal-zuckerberg-what-he-knew.html"><img src="images/icon3.png" alt="Counselor icon" height="500vh" id="bigImage"></img></a>`,
+  `<a href="https://theconversation.com/facebook-has-known-for-a-year-and-a-half-that-instagram-is-bad-for-teens-despite-claiming-otherwise-here-are-the-harms-researchers-have-been-documenting-for-years-168043"><img src="images/icon4.png" alt="Counselor icon" height="500vh" id="bigImage"></img></a>`,
+  `<a href="https://www.wired.com/story/google-antitrust-lawsuits-explainer/"><img src="images/icon5.png" alt="Counselor icon" height="500vh" id="bigImage"></img></a>`,
+];
+
+const coronavirus = [
+  "Please stay home",
+  "Wear a mask",
+  "Fortunately, I don't have COVID",
+  "These are uncertain times",
 ];
