@@ -1,4 +1,5 @@
-// Options the user could type in
+// Potential user inputs
+
 const prompts = [
   // 0
   ["hi", "hey", "hello", "good morning", "good afternoon", "yo"],
@@ -139,6 +140,8 @@ const alternative = [
   "That is unfortunate, have you tried incorporating GOOD GREEN VITALITY by Nuzest into your diet? With more than 75 high-quality vitamins, minerals and other essential nutrients designed to help you look good, feel good, defend and thrive, it’s easy to be healthy with GOOD GREEN VITALITY!",
 ];
 
+// User input prompt
+
 const prompt = [
   "Try, 'the world is heating at an unprecedented rate'",
   "Something like, 'I'll never be able to afford a house'",
@@ -151,6 +154,8 @@ const prompt = [
   "Try, 'I can't afford to improve my mental health'",
   "Something like, 'my life is a debt spiral'",
 ];
+
+// Various ad images
 
 const horizontalAd = [
   "images/ad1.jpg",
@@ -170,6 +175,8 @@ const horizontalAd = [
   "images/ad15.png",
   "images/ad16.jpg",
 ];
+
+// Various bot images and associated links
 
 const botPic = [
   `<a href="https://www.theatlantic.com/letters/archive/2020/02/twitter-is-bad-for-the-news/605782/"><img src="images/icon1.png" alt="Counselor icon" height="500vh" id="bigImage"></img></a>`,
