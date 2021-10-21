@@ -1,11 +1,7 @@
-# JavaScript Chatbot 
+Included in the zip are all the website files and the Pecha Kucha slides and script. 
+The website can be viewed online [Here](https://corporatecounselor.online/)
 
-This is a very simple "chatbot" using nothing but JavaScript, HTML, & CSS. I put this in quotes because chatbots these days are way more complex - this is an exercise in vanilla JS loops and conditionals, not AI.
+All ads on the website link to individual articles/journals/websites commenting on solutionism, McMindfullness, platform capitalism, the wellness industry etc. 
+The about page includes some information about the thought process behind the website. All bot responses can be read in the constants.js file
 
-I hope it makes a good intro for anyone interested in chatbots and frontend fundamentals.
-
-Enjoy!
-
-[Demo](https://sylviapap.github.io/chatbot/)
-
-[Blog post](https://dev.to/sylviapap/make-a-simple-chatbot-with-javascript-1gc)
+This bot is based on a [Tutorial](https://dev.to/sylviapap/make-a-simple-chatbot-with-javascript-1gc) by Sylvia Papa
